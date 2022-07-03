@@ -1,0 +1,8 @@
+.main-section {
+  margin: rem(96) 0;
+
+  &__title {
+    @extend %header-2;
+    margin-bottom: rem(32);
+  }
+}

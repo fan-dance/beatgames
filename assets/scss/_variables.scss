@@ -1,0 +1,48 @@
+$blue:    #4CC9F0;
+$indigo:  #480CA8;
+$purple:  #7E1AFF;
+$pink:    #F72585;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #3F37C9;
+
+$white: #FFFFFF;
+$black: #000000;
+$gray: #8B8B8B;
+
+$primary: $pink;
+$secondary: $purple;
+
+$body-bg: #F6F6F6;
+$body-color: $black;
+$font-family-base: 'Inter', sans-serif;
+$line-height-base: 1.25;
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1320px
+);
+$container-max-widths: (
+  xs: 100%,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1312px
+);
+$grid-columns: 24;
+$grid-gutter-width: 32px;
+
+$btn-border-radius: 3rem;
+$btn-font-size: 1rem;
+$btn-padding-x: 2rem;
+$btn-padding-y: 1.125rem;
+$btn-font-weight: 600;
+$btn-line-height: 1.25;
