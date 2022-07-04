@@ -30,7 +30,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-      '@/plugins/bootstrap-vue'
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -45,6 +45,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
+    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -53,6 +54,13 @@ export default {
     '@nuxt/content',
     '@nuxtjs/style-resources',
   ],
+
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    css: false,
+    bvCSS: false,
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
 
   styleResources: {
     scss: [
@@ -77,5 +85,19 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    }
+  },
 }
