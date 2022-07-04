@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fbeatgames\u002F_nuxt\u002Fstatic\u002F1656947887",layout:"default",error:a,serverRendered:true,routePath:"\u002Fgames\u002Fpara-pa_gorod-tancev",config:{_app:{basePath:"\u002Fbeatgames\u002F",assetsPath:"\u002Fbeatgames\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"10b8616c"}}}}(null));
