@@ -1,6 +1,8 @@
 <template lang="pug">
-b-container
-  nuxt-content(:document="game" tag="article")
+div
+  LazyUIGameInfo(:game="game")
+  b-container
+    //nuxt-content(:document="game" tag="article")
 </template>
 
 <script>

@@ -15,11 +15,9 @@ div.main-page
 export default {
   name: 'IndexPage',
   async asyncData({params, $content}) {
-    const games = await $content('games').fetch();
-
+    const games = await $content('games').sortBy('order', 'asc').fetch();
     return {
-      games,
-      slug: params.slug
+      games
     }
   },
   computed: {

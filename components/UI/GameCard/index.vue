@@ -2,7 +2,7 @@
 nuxt-link.game-card(:to="`/games/${game.slug}`")
   .game-card__image
     img(:src="require(`@/assets/images/games/${game.image}`)")
-  .game-card__title {{ game.name }}
+  .game-card__title {{ game.title }}
   .game-card__description(v-html="game.description")
 </template>
 

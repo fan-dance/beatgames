@@ -1,0 +1,48 @@
+.game-icon {
+  $this: #{&};
+
+  position: relative;
+  width: rem(256);
+  height: rem(256);
+
+  &__content {
+    width: rem(256);
+    height: rem(256);
+    position: relative;
+    background-color: $white;
+    border-radius: rem(32);
+    box-shadow: 0px 20px 40px rgba(126, 26, 255, 0.15);
+    display: flex;
+    z-index: 2;
+  }
+
+  &__cover {
+    width: rem(208);
+    height: rem(208);
+    margin: auto;
+    z-index: 3;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(#{rem(64)}) saturate(3);
+    z-index: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

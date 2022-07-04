@@ -3,6 +3,9 @@ title: 'Пара Па: Город Танцев'
 description: 'Первая танцевальная онлайн игра в&nbsp;России. Много социальных механик, режимов игры'
 image: 'parapa.png'
 type: 'pc'
+order: 1
+tags: ['舞街区', '5Street']
+links: [{name: 'Сайт игры [RU]', url: 'https://parapa.ru/'},{name: 'Сайт игры [CN]', url: 'https://5jq.woniu.com/'},]
 ---
 
 ## Пара Па: Город Танцев

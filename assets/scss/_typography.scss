@@ -4,3 +4,23 @@
   line-height: 1.2;
   font-weight: 700;
 }
+
+%header-3 {
+  font-family: $font-family-base;
+  font-size: rem(36);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+%caption {
+  color: $gray;
+  font-size: rem(14);
+  line-height: 1.5;
+}
+
+%body {
+    font-family: $font-family-base;
+    font-size: rem(16);
+    line-height: 1.25;
+    font-weight: 400;
+}
