@@ -6,3 +6,11 @@
 // Затем импортируйте файлы SCSS Bootstrap и BootstrapVue  (порядок важен)
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+
+.btn {
+  @include media-breakpoint-down(sm) {
+    padding: rem(14) rem(16) rem(14) rem(16);
+  }
+}

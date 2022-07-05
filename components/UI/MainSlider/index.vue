@@ -2,9 +2,9 @@
 div.main-slider
   b-container.main-slider__container
     b-row.h-100
-      b-col.main-slider__person(lg="10")
+      b-col.main-slider__person(lg="10" md="12" cols="24")
         img.main-slider__person-img(src="@/assets/images/slider-girl.png")
-      b-col.main-slider__content.d-flex.flex-column.justify-content-center(lg="10" offset="2")
+      b-col.main-slider__content.d-flex.flex-column.justify-content-center(lg="10" md="12" cols="24" offset-lg="2")
         h3.main-slider__title Добро пожаловать!
         p Приветствуем в мире танцевальных игр – FanDance
         p Смотрите каталог игр на сайте и подписывайтесь на нашу группу ВК!

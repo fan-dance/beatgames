@@ -3,6 +3,10 @@
   font-size: rem(48);
   line-height: 1.2;
   font-weight: 700;
+
+  @include media-breakpoint-down(md){
+    font-size: rem(32);
+  }
 }
 
 %header-3 {
@@ -10,12 +14,34 @@
   font-size: rem(36);
   line-height: 1.25;
   font-weight: 700;
+
+  @include media-breakpoint-down(md){
+    font-size: rem(32);
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(24);
+  }
+}
+%header-4 {
+  font-family: $font-family-base;
+  font-size: rem(32);
+  line-height: 1.25;
+  font-weight: 700;
+
+  @include media-breakpoint-down(md){
+    font-size: rem(24);
+  }
 }
 
 %caption {
   color: $gray;
   font-size: rem(14);
   line-height: 1.5;
+
+  @include media-breakpoint-down(sm) {
+    font-size: rem(12);
+  }
 }
 
 %body {

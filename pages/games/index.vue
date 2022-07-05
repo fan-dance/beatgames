@@ -4,7 +4,7 @@ UIMainSection
   template
     b-row
       template(v-for="game in pcGames")
-        b-col.mb-4(cols="12" lg="8" :key="game.id")
+        b-col.mb-3.mb-lg-4(cols="12" lg="8" :key="game.id")
           UIGameCard(:game="game" :key="game.id")
 </template>
 
