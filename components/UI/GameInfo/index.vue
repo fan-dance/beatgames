@@ -15,6 +15,15 @@
             target="_blank" )
             b-icon-link45deg.game-info__link-icon
             | {{ link.name }}
+  .game-info__video(v-if="game.video")
+    iframe(
+      :src="game.video"
+      width="100%"
+      height="100%"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    )
 </template>
 
 <script>

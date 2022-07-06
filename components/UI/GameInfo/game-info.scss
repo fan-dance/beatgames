@@ -2,6 +2,11 @@
   background: $white;
   padding: rem(96) 0;
   border-bottom: rem(1) solid $border-color;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-top: calc(41.87% + #{rem(64)});
+  }
 
   @include media-breakpoint-down(sm) {
     padding: rem(64) 0;
@@ -9,11 +14,14 @@
 
   @include media-breakpoint-down(xs) {
     padding: rem(48) 0;
+    padding-top: calc(27.915vh);
   }
 
   &__content {
     display: flex;
     column-gap: rem(68);
+    position: relative;
+    z-index: 3;
 
     @include media-breakpoint-down(md) {
       column-gap: rem(32);
@@ -48,6 +56,11 @@
     @include media-breakpoint-down(xs) {
       margin-left: auto;
       margin-right: auto;
+      position: absolute;
+      left: 50%;
+      top: -65%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 3;
     }
   }
 
@@ -155,6 +168,58 @@
     @include media-breakpoint-down(xs) {
       width: rem(20);
       height: rem(20);
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 41.94%;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-down(lg) {
+      width: 25%;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 41.87%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba($black, 0.3) url("@/assets/images/video-bg.svg") no-repeat left center;
+      z-index: 2;
+
+      @include media-breakpoint-down(md) {
+        background: rgba($black, 0.3) url("~/assets/images/video-bg-mobile.svg") no-repeat bottom center;
+        background-size: cover;
+      }
+
+      @include media-breakpoint-down(xs) {
+        background: url("~/assets/images/video-bg-mobile.svg") no-repeat bottom center;
+
+
+      }
+    }
+
+    iframe {
+      position: absolute;
+      left: -25%;
+      top: 50%;
+      width: 150%;
+      height: 150%;
+      transform: translateY(-50%);
+      z-index: 1;
     }
   }
 }
