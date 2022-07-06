@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fbeatgames\u002F_nuxt\u002Fstatic\u002F1657055726",layout:"default",error:a,serverRendered:true,routePath:"\u002Fgames\u002Flove-beat",config:{_app:{basePath:"\u002Fbeatgames\u002F",assetsPath:"\u002Fbeatgames\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"5c9b07f5"}}}}(null));

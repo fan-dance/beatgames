@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fbeatgames\u002F_nuxt\u002Fstatic\u002F1657097202",layout:"default",error:a,serverRendered:true,routePath:"\u002Fgames\u002Fdance-world",config:{_app:{basePath:"\u002Fbeatgames\u002F",assetsPath:"\u002Fbeatgames\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"1793be87"}}}}(null));
